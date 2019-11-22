@@ -16,6 +16,7 @@ export class VoteChartComponent implements OnInit {
   chart = []
 
   // All the different tables initialized with 0 votes
+  all_votes: number = 0
   table_1: number = 0
   table_2: number = 0
   table_3: number = 0
@@ -43,6 +44,8 @@ export class VoteChartComponent implements OnInit {
     this.receiveChannel = this.ably.channels.get("vote-channel")
     // Ably Subscription
     this.receiveChannel.subscribe("update", function(message: any) {
+      // Increment number of votes
+      this.all_votes++;
       // Parse through the different possible options
       switch(message.data.vote) {
         case 1:
@@ -109,7 +112,7 @@ export class VoteChartComponent implements OnInit {
                    "Table 9",  "Table 10", "Table 11", "Table 12",
                    "Table 13", "Table 14", "Table 15", "Table 16"],
           datasets:[{
-            label: "Pick your favorite table!",
+            label: "Current Total Vote Count: " + this.all_votes.toString(),
             data: [this.table_1, this.table_2,  this.table_3,  this.table_4,
                    this.table_5, this.table_6,  this.table_7,  this.table_8,
                    this.table_9, this.table_10, this.table_11, this.table_12,
