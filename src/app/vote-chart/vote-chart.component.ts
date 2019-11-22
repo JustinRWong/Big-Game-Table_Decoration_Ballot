@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from './../environments/environment';
+import { Chart } from 'chart.js';
+
+declare var Ably: any;
 
 @Component({
   selector: 'app-vote-chart',
@@ -9,7 +11,7 @@ import { environment } from './../environments/environment';
 export class VoteChartComponent implements OnInit {
 
   // Class Attributes
-  able: any
+  ably: any
   receiveChannel: any
   chart = []
 
