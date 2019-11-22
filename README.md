@@ -14,6 +14,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Deploy
+Run `ng build --prod --output-path docs --base-href big-game-dinner-ballot` to build for deployment. Once built, create a copy of `docs/index.html` and rename the file to `404.html`. 
+
+Git Add, Commit and Push. 
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
