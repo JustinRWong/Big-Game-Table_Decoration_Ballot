@@ -37,6 +37,8 @@ export class VoteChartComponent implements OnInit {
   table_15: number = 0
   table_16: number = 0
 
+  table_17: number = 0
+
   ngOnInit() {
     // Connect to ably API
     this.ably = new Ably.Realtime('I2Jq7A.QNQwAw:x21TJMf4Y43moj97')
@@ -100,6 +102,10 @@ export class VoteChartComponent implements OnInit {
           this.table_16++;
           break;
 
+        case 17:
+          this.table_17++;
+          break;
+
         default:
           alert("TABLE NOT FOUND: ERROR IN vote-chart.component.ts");
       }
@@ -110,26 +116,26 @@ export class VoteChartComponent implements OnInit {
           labels: ["Table 1",   "Table 2",  "Table 3", "Table 4",
                    "Table 5",   "Table 6",  "Table 7", "Table 8",
                    "Table 9",  "Table 10", "Table 11", "Table 12",
-                   "Table 13", "Table 14", "Table 15", "Table 16"],
+                   "Table 13", "Table 14", "Table 15", "Table 16", "Table 17"],
           datasets:[{
             label: "Current Total Vote Count: " + this.all_votes.toString(),
             data: [this.table_1, this.table_2,  this.table_3,  this.table_4,
                    this.table_5, this.table_6,  this.table_7,  this.table_8,
                    this.table_9, this.table_10, this.table_11, this.table_12,
-                  this.table_13, this.table_14, this.table_15, this.table_16],
+                  this.table_13, this.table_14, this.table_15, this.table_16, this.table_17],
             // Alternate background color with Cal and Stanford colors
             // Cal Blue *  Cal Gold *  Cardinal * Red-White
             backgroundColor: [
               'rgba(0,50,98,1)',        'rgba(0,50,98,1)',     'rgba(0,50,98,1)',     'rgba(0,50,98,1)',
               'rgba(253,181,21,1)',  'rgba(253,181,21,1)',  'rgba(253,181,21,1)',  'rgba(253,181,21,1)',
               'rgba(140,21,21,1)',    'rgba(140,21,21,1)',   'rgba(140,21,21,1)',   'rgba(140,21,21,1)',
-              'rgba(255,255,255,1)','rgba(255,255,255,1)', 'rgba(255,255,255,1)', 'rgba(255,255,255,1)'
+              'rgba(255,255,255,1)','rgba(255,255,255,1)', 'rgba(255,255,255,1)', 'rgba(255,255,255,1)', 'rgba(255,255,255,1)'
             ],
             borderColor: [
               'rgba(0,50,98,1)',        'rgba(0,50,98,1)',     'rgba(0,50,98,1)',     'rgba(0,50,98,1)',
               'rgba(253,181,21,1)',  'rgba(253,181,21,1)',  'rgba(253,181,21,1)',  'rgba(253,181,21,1)',
               'rgba(140,21,21,1)',    'rgba(140,21,21,1)',   'rgba(140,21,21,1)',   'rgba(140,21,21,1)',
-              'rgba(77,79,83,1)','rgba(77,79,83,1)', 'rgba(77,79,83,1)', 'rgba(77,79,83,1)'
+              'rgba(77,79,83,1)','rgba(77,79,83,1)', 'rgba(77,79,83,1)', 'rgba(77,79,83,1)', 'rgba(77,79,83,1)'
             ],
             borderWidth: 2.5
           }]
