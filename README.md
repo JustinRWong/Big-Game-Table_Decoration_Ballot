@@ -27,6 +27,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Cast Votes
+Find the Able socket that publishes votes to send to Angular backend on https://glitch.com/~jazzy-singularity.
+
+The app casts votes on this website: https://jazzy-singularity.glitch.me
+
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
