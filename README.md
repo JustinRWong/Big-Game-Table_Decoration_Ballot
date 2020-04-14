@@ -6,6 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+http://localhost:4200/
+![Alt text](https://github.com/JustinRWong/Big-Game-Table_Decoration_Ballot/blob/master/Screenshot%202020-04-13%20at%208.41.10%20PM.png?raw=true "Optional title")
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
