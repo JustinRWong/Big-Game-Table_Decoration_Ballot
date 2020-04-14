@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 http://localhost:4200/
-![Alt text](http://Screenshot 2020-04-13 at 8.41.10 PM.png "Optional title")
+![Alt text](https://github.com/JustinRWong/Big-Game-Table_Decoration_Ballot/blob/master/Screenshot%202020-04-13%20at%208.41.10%20PM.png?raw=true "Optional title")
 
 ## Code scaffolding
 
