@@ -9,6 +9,15 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 http://localhost:4200/
 ![Alt text](https://github.com/JustinRWong/Big-Game-Table_Decoration_Ballot/blob/master/Screenshot%202020-04-13%20at%208.41.10%20PM.png?raw=true "Optional title")
 
+When you go to either link(https://jazzy-singularity.glitch.me/ or http://bit.ly/Big-Game-2019), the following screen will allow one vote per name, as shown in the screenshot
+![Alt text](https://github.com/JustinRWong/Big-Game-Table_Decoration_Ballot/blob/master/Screenshots/Screenshot%202020-04-13%20at%208.47.31%20PM.png?raw=true)
+
+Once the vote has been casted, the voter's screen can no longer vote again because their channel is cut off. 
+![Alt text](https://github.com/JustinRWong/Big-Game-Table_Decoration_Ballot/blob/master/Screenshots/Screenshot%202020-04-13%20at%208.48.07%20PM.png?raw=true)
+
+In realtime, http://localhost:4200/ gets updated and the results will be in!
+![Alt text](https://github.com/JustinRWong/Big-Game-Table_Decoration_Ballot/blob/master/Screenshots/Screenshot%202020-04-13%20at%208.50.14%20PM.png)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
